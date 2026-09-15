@@ -13,3 +13,6 @@ eslint.sarif
 tsconfig.tsbuildinfo
 # esbuild metadata file
 meta.json
+
+# Local Tekton PipelineRuns (ECR details, not for upstream)
+.tekton/
