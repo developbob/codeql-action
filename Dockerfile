@@ -5,7 +5,8 @@
 # while the bundled CodeQL CLI version is pinned to the value declared in
 # src/defaults.json (currently 2.27.0).
 
-FROM node:20-slim
+ARG BASE_IMAGE=node:20-slim
+FROM ${BASE_IMAGE}
 
 ARG CODEQL_ACTION_VERSION=4.38.0
 ARG CODEQL_CLI_VERSION=2.27.0
