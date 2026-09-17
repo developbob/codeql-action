@@ -22,6 +22,8 @@ WORKDIR /tmp
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     curl \
+    jq \
+    python3 \
     tar \
     && rm -rf /var/lib/apt/lists/*
 
